@@ -17,13 +17,13 @@ function love.load()
 
 	-- mountTypes = "engine", "gun", nil
 	player.mounts = {
-						{id = 1, parent = player, sprite = love.graphics.newImage("engine_02.png"), mountType = "engine", rot = 0, mx = -0.75, my = -0.35, x=0, y=0, sx = 1, sy = 1, visible = true},
-						{id = 2, parent = player, sprite = love.graphics.newImage("engine_02.png"), mountType = "engine", rot = 0, mx = -0.75, my = 0.35, x=0, y=0, sx = 1, sy = 1,  visible = true},
-						{id = 3, parent = player, sprite = love.graphics.newImage("engine_02.png"), mountType = "engine", rot = 0, mx = -0.65, my = 0, x=0, y=0, sx = 1, sy = 1, visible = true},
-						{id = 4, parent = player, sprite = love.graphics.newImage("gun_01.png"), mountType = "gun", rot = 0, mx = 0.80, my = -0.25, x=0, y=0, sx = 0.9, sy = 0.9, visible = true},
-						{id = 5, parent = player, sprite = love.graphics.newImage("gun_01.png"), mountType = "gun", rot = 0, mx = 0.80, my = 0.25, x=0, y=0, sx = 0.9, sy = 0.9, visible = true},
-						{id = 6, parent = player, sprite = love.graphics.newImage("gun_01.png"), mountType = "gun", rot = 0, mx = 0.95, my = 0, x=0, y=0, sx = 0.9, sy = 0.9, visible = true}
-					}
+		{id = 1, parent = player, sprite = love.graphics.newImage("engine_02.png"), mountType = "engine", rot = 0, mx = -0.75, my = -0.35, x=0, y=0, sx = 1, sy = 1, visible = true},
+		{id = 2, parent = player, sprite = love.graphics.newImage("engine_02.png"), mountType = "engine", rot = 0, mx = -0.75, my = 0.35, x=0, y=0, sx = 1, sy = 1,  visible = true},
+		{id = 3, parent = player, sprite = love.graphics.newImage("engine_02.png"), mountType = "engine", rot = 0, mx = -0.65, my = 0, x=0, y=0, sx = 1, sy = 1, visible = true},
+		{id = 4, parent = player, sprite = love.graphics.newImage("gun_01.png"), mountType = "gun", rot = 0, mx = 0.80, my = -0.25, x=0, y=0, sx = 0.9, sy = 0.9, visible = true},
+		{id = 5, parent = player, sprite = love.graphics.newImage("gun_01.png"), mountType = "gun", rot = 0, mx = 0.80, my = 0.25, x=0, y=0, sx = 0.9, sy = 0.9, visible = true},
+		{id = 6, parent = player, sprite = love.graphics.newImage("gun_01.png"), mountType = "gun", rot = 0, mx = 0.95, my = 0, x=0, y=0, sx = 0.9, sy = 0.9, visible = true}
+	}
 
 	for id in pairs(player.mounts) do 
 		if player.mounts[id].mountType ~= nil then
